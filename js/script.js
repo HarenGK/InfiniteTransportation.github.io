@@ -161,6 +161,6 @@ function showSlides(n) {
 
 
 
-document.onclick().getElementsByClassName("btn back-btn")
+
 
             
