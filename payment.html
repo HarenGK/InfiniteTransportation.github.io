@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BOOKING CONFIRMATION</title>
+  <link rel="icon" href="images/favicon.ico/favicon1.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="css/payment.css">
+<meta name="payment" content="payment-method" />
+</head>
+<body>
+
+  <div class="checkout-panel">
+    <div class="panel-body">
+      <h2 class="title">Checkout</h2>
+
+
+      <div class="payment-method">
+        <label for="card" class="method card">
+
+            <img src="images/payment/visa_logo.png" alt="payment"/> 
+            <img src="images/payment/mastercard_logo.png" alt="payment"/>
+          
+
+          
+            <input id="card" type="radio" name="payment">
+            Pay with credit card
+         
+        </label>
+
+        <label for="paypal" class="method paypal">
+          <img src="images/payment/paypal_logo.png" alt="payment"/>
+          
+            <input id="paypal" type="radio" name="payment">
+            Pay with PayPal
+          
+        </label>
+      </div>
+
+      <div class="input-fields">
+        <div class="column-1">
+          <label for="cardholder">Cardholder's Name</label>
+          <input type="text" id="cardholder" />
+
+          <div class="small-inputs">
+            <div>
+              <label for="date">Valid thru</label>
+              <input type="text" id="date" placeholder="MM / YY" />
+            </div>
+
+            <div>
+              <label for="verification">CVV / CVC *</label>
+              <input type="password" id="verification"/>
+            </div>
+          </div>
+
+        </div>
+        <div class="column-2">
+          <label for="cardnumber">Card Number</label>
+          <input type="password" id="cardnumber"/>
+
+          <span class="info">* CVV or CVC is the card security code, unique three digits number on the back of your card separate from its number.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel-footer">
+      <button onclick="alert('ARE YOU SURE YOU WANT TO LEAVE THIS PAGE')" class="btn back-btn">Back</button>
+      <button onclick="alert('PAYMENT SUCESSFUL')" class="btn next-btn">Proceed</button>
+    </div>
+  </div>
+
+ 
+  <script src="script.js"></script>
+</body>
+</html>

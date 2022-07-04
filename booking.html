@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>BOOK NOW</title>
+        <meta name="description" content="car ride">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/booking.css">
+        <link rel="icon" href="images/favicon.ico/favicon1.png" type="image/png">
+        <style>
+        </style>
+    </head>
+    <body>
+
+<!--HOME BUTTON-->
+<div class="main-homeButton">
+    <span onclick="window.location.href='index.html';"><img src="images/BrandLogo.jpeg" alt="home button" style="width: 20%;margin-left: 40%;margin-top: 4%;" ></span>
+</div>
+
+<!--BOOKING PAGE-->
+<section class="booking" id="booking">
+
+    <h1 class="heading"><span>BOOKING</span> DETAILS</h1>
+
+    <div class="row">
+    <form action="#">
+
+        <fieldset><legend> Customer Information</legend>
+        <div>
+            <h2>Name</h2>
+            <input type="text" 
+            name="TextName" 
+            id="Textid" 
+            size="50"
+            pattern="[a-z]{1-20}"
+            placeholder="Please Enter Your Fullname"
+            required>
+
+            
+        </div>
+        <br>
+        <br>
+        <div>
+            <h2>Phone Number</h2>
+            <input type="text" 
+            name="Phone" 
+            id="Phoneid" 
+            size="50"
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"
+            placeholder="Please Enter Your Phone Number   Format: 01x-2xx-6xx"
+            required>
+        </div>
+        <div>
+
+        </div>
+        <br>
+        <br>
+        <div>
+            <h2>Email</h2>
+            <input type="text" 
+            name="email" 
+            id="email" 
+            size="50" 
+            placeholder="Please Enter Your Email Address"
+            required style="text-transform: lowercase;">
+        </div>
+        <br>
+        <br>
+        <div>
+            <h2>Car Selected</h2>
+            <select size="1" required >
+            <option disabled selected value> -- select an option -- </option>
+            <option >MPV</option>
+            <option>SEDAN</option>
+            <option>COMPACT</option>
+            <option>COUPE</option>
+            <option>HATCHBACK</option>
+            </select> 
+        </div>
+        <br>
+        <br>
+        <div class="empty">
+            <h2>Select a Service Type:</h2>
+            <br><br>
+            <input type="radio" name="browser" class="serviceType"> <p>Hourly</p>
+            <br><br>
+            <input type="radio" name="browser" class="serviceType"> <p>Daily</p>
+            <br><br>
+            <input type="radio" name="browser" class="serviceType"> <p>Distance</p>
+        </div>
+        <br>
+        <br>
+
+        <div>
+            <h2>From:</h2>
+            <input type="text" 
+            name="place" 
+            id="placeid" 
+            size="50" 
+            placeholder="Please Enter The Pick Up Address"
+            pattern="[A-Za-z0-9'\.\-\s\,]"
+            required>
+        </div>
+        <br>
+        <br>
+        <div>
+            <h2>Date:</h2>
+            <label for="myDate"></label>
+            <input type="date" name="myDate" id="myDate" required>
+        </div>
+        <br>
+        <br>
+        <div >
+            <h2>Pick Up Time:</h2>
+            <label for="pickuptime"></label>
+            <input type="time" name="myTime" id="myTime" required>
+        </div>
+        <br>
+        <br>
+        <div>
+            <h2>No of Passenger</h2>
+            <input type="tel" 
+            name="passenger" 
+            id="passengerid" 
+            pattern="[0-9]{1}"
+            placeholder="No of Passenger"
+            required>
+        </div>
+        
+        <br>
+        <br>
+        <!--BACK BUTTON-->
+        <div class="homeNav">
+
+            <a href="index.html">BACK </a>
+        </div> 
+        <!--PROCEED BUTTON-->
+        <div class="homeNav">
+                <button onclick="alert('PLEASE VERIFY YOUR DETAILS BEFORE PROCEEDING TO THE PAYMENT PAGE')"><a href="payment.html">PROCEED</a></button>
+            
+        </div> 
+        
+        <br>
+        </fieldset>
+    
+    </form>
+    </div>
+    
+
+</section>
+
+    
+    </body>
+</html>
