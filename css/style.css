@@ -116,6 +116,7 @@ section{
     display: none;
 }
 /* Login Styling */
+/* Login Styling */
 .login-form-container{
     position: fixed;
     top:-105%; left:0;
@@ -126,10 +127,11 @@ section{
     justify-content: center;
     background:rgba(255,255,255,.9);
     z-index: 10000;
+    transition: top 0.3s ease-in-out; /* Added transition for smoother animation */
 }
 
 .login-form-container.active{
-    top: 5px;
+    top: 0; /* Changed to 0 for better centering */
 }
 
 .login-form-container form{
@@ -153,6 +155,15 @@ section{
     display: block;
     width:100%;
     margin:.5rem 0;
+    background-color: #007BFF; /* Added background color */
+    color: #fff; /* Added text color */
+    border: none; /* Removed border */
+    border-radius: .5rem; /* Added border radius */
+    transition: background-color 0.3s ease-in-out; /* Added transition for smoother hover effect */
+}
+
+.login-form-container form .btn:hover{
+    background-color: #0056b3; /* Darker shade for hover effect */
 }
 
 .login-form-container form .box{
