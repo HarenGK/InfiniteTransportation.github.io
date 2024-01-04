@@ -6,13 +6,13 @@ menu.onclick = () =>{
   navbar.classList.toggle('active');
 }
 
-document.querySelector('#login-btn').onclick = () =>{
-  document.querySelector('.login-form-container').classList.toggle('active');
-}
+document.getElementById('login-btn').addEventListener('click', function() {
+  document.querySelector('.login-form-container').style.display = 'block';
+});
 
-document.querySelector('#close-login-form').onclick = () =>{
-  document.querySelector('.login-form-container').classList.remove('active');
-}
+document.getElementById('close-login-form').addEventListener('click', function() {
+  document.querySelector('.login-form-container').style.display = 'none';
+});
 
 /*Sign Up Button */
 window.onclick = function(event) {
