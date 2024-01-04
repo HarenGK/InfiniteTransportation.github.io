@@ -1,15 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WELCOME TO INFINITE TRANSPORTATION SERVICES</title>
-    <link rel="icon" href="images/favicon.ico/favicon1.png" type="image/png">
-    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="css/style.css">
-</head>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Welcome to Infinite Transportation Services. We provide top-notch transportation services.">
+        <meta name="keywords" content="Transportation, Services, Infinite Transportation, CHAEUFFEUR">
+        <title>WELCOME TO INFINITE TRANSPORTATION SERVICES</title>
+        <link rel="icon" href="images/favicon.ico/favicon1.png" type="image/png">
+        <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+    <!--NAVIGATION-->
+    <header class="header">
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <img src="images/BrandLogo.jpeg" alt="Brand Logo" class="logo"> 
+        <nav class="navbar">
+            <a href="index.html">home</a>
+            <a href="#featured">vehicles</a>
+            <a href="services.html">services</a>
+            <a href="contact.html">contact</a>
+        </nav>
+        <div id="login-btn">
+            <button class="btn">login</button>
+            <i class="far fa-user"></i>
+        </div>
+    </header> 
+    
+ <!--LOGIN PAGE-->
+    <main>
+        <section class="login-form-container">
+            <span id="close-login-form" class="fas fa-times"></span>
+
+            <form action="#">
+                <h3>User Login</h3>
+
+                <label for="email" class="form-label">Email</label>
+                <input type="email" id="email" placeholder="Please enter your email" class="box" required>
+
+                <label for="password" class="form-label">Password</label>
+                <input type="password" id="password" placeholder="Please enter your password" class="box" required>
+
+                <input type="submit" value="Login" class="btn">
+            </form>
+        </section>
+    </main>
 <body>
 <!--NAVIGATION-->
 <header class="header">
@@ -36,8 +75,8 @@
         <h3>user login</h3>
         <input type="email" placeholder="Please enter your email" class="box">
         <input type="password" placeholder="Please enter your password" class="box">
-        <p> forget your password <a href="#">click here</a> </p>
-        <input type="submit" value="login" class="btn">
+        <p> Forget your Password? <a href="#">click here</a> </p>
+        <input type="SUBMIT" value="LOGIN" class="btn">
         <button onclick="document.getElementById('create').style.display='block'" style="width:auto;">Don't have an account? <br> Sign Up now</button>
     </form>
     <!--Sign Up Page-->
@@ -316,6 +355,4 @@
   <script src="js/script.js" defer></script>
   <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 </body>
-
-
 </html>
